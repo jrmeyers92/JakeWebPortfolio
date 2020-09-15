@@ -1,0 +1,22 @@
+{
+  "name": "jakewebportfolio",
+  "version": "1.0.0",
+  "description": "Jake Meyers Web Developer Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "run": "node-sass sass/main.scss css/style.css -w"
+  },
+  "keywords": [
+    "Front",
+    "End",
+    "Web",
+    "Developer",
+    "Jake",
+    "Meyers"
+  ],
+  "author": "Jake Meyers",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
