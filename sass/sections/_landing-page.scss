@@ -1,7 +1,21 @@
 .landing-page {
+    background-color: #20a4f3;
+    color: white;
     height: 100vh;
-    background-image: linear-gradient(to bottom right, rgba(0,0,0, .3), rgba(0,0,0, 1)), 
-    url(../../Imgs/LandingPageXL.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__headings {
+        margin-top: -20rem;
+    }
+
+    & h1 {
+        font-size: 5rem;
+    }
+
+    & h2 {
+        font-size: 3rem;
+    }
 }
+

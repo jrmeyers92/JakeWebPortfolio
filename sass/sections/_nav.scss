@@ -1,37 +1,53 @@
 .nav {
-    height: 10vh;
-    background-color: black;
+    background-color: #20a4f3;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
-    
+    color:white;
+    height: 10vh;
+
+    &__card {
+        display: flex;
+
+        &__logo-names {
+            height: 10vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        & p {
+            margin-left: 2rem;
+            font-size: 1.7rem;
+        }
+        
+    }
 
     &__links {
         display: flex;
-        justify-content: center;
-        list-style-type: none;
-        
-         
-        & a {
-            text-decoration: none;
-            color: white;
+
+        & li {
+            list-style-type: none;
             margin: 2rem;
-            font-size: 2rem;
+            font-size: 4rem;
+            transition: all .1s;
+
+            &:hover,
+            &:active {
+                border-bottom: white solid 3px;
+            }
+        }
+
+        & a {
+            color: white;
+            text-decoration: none;
+        }
+
+        &:last-child {
+            background-color: #20a6f37a !important
         }
     }
 
- & .github {
-          color: white;  
-          text-decoration: none;
-          font-size: 1.6rem;
-          background-color: orange;
-          padding: 1rem;
-          border-radius: 5rem;
-          margin-right: 2rem;
-
-          &:hover {
-              background-color: rgb(155, 101, 0);
-          }
-        }
 }
+
