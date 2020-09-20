@@ -71,4 +71,19 @@ body {
     align-items: center; }
     .landing-page .view i {
       font-size: 5rem;
-      margin-top: 2rem; }
+      margin-top: 2rem;
+      color: white; }
+
+.projects__header {
+  font-size: 3rem;
+  text-align: center;
+  margin: 2rem 0; }
+
+.projects__div {
+  display: flex;
+  justify-content: space-around; }
+
+.projects__container {
+  background-color: #20a4f3;
+  height: 200px;
+  width: 200px; }

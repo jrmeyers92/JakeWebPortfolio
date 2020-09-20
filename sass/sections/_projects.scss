@@ -1,0 +1,21 @@
+.projects {
+
+    &__header {
+        font-size: 3rem;
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    &__div {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__container {
+        background-color: #20a4f3;
+        height: 200px;
+        width: 200px;
+    }
+
+
+}
