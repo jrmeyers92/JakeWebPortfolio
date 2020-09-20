@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
 *, html {
   margin: 0;
   padding: 0;
@@ -11,6 +12,8 @@
   align-items: center;
   color: white;
   height: 10vh; }
+  .nav__logo {
+    font-family: 'Monoton', cursive; }
   .nav__card {
     display: flex; }
     .nav__card__logo-names {
@@ -28,14 +31,15 @@
       list-style-type: none;
       margin: 2rem;
       font-size: 4rem;
-      transition: all .1s; }
+      transition: all .1s;
+      padding: 1rem; }
       .nav__links li:hover, .nav__links li:active {
         border-bottom: white solid 3px; }
     .nav__links a {
       color: white;
       text-decoration: none; }
-    .nav__links:last-child {
-      background-color: #20a6f37a !important; }
+  .nav__hire {
+    background-color: #216f9c94; }
 
 .landing-page {
   background-color: #20a4f3;
