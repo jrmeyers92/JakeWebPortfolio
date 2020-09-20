@@ -1,10 +1,11 @@
 .landing-page {
     background-color: #20a4f3;
     color: white;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 
     &__headings {
         margin-top: -20rem;
@@ -16,6 +17,24 @@
 
     & h2 {
         font-size: 3rem;
+    }
+
+    & .view {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 10rem;
+        font-size: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & i {
+            font-size: 5rem;
+            margin-top: 2rem;
+
+        }
     }
 }
 
