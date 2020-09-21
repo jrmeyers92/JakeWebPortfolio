@@ -1,0 +1,59 @@
+.toggler {
+    height: 5rem;
+    width: 5rem;
+    margin: 2rem;
+    position: relative;
+    display: none;
+
+    &__checkbox {
+        cursor: pointer;
+        height: 5rem;
+        width: 5rem;
+        opacity: 0;
+        z-index: 400000;
+        position: relative;
+    }
+
+    &__checkbox:checked + div {
+        background-color: #20a4f3;
+    }
+
+    &__checkbox:checked + div::before {
+        transform: rotate(45deg);
+    }
+
+    &__checkbox:checked + div::after {
+        transform: rotate(-45deg);
+    }
+
+
+    &__line {
+        height: 1rem;
+        width: 5rem;
+        border-radius: 10px;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        transition: all .2s;
+        
+
+        &::before,
+        &::after {
+            content: " ";
+            position: absolute;
+            height: 1rem;
+            width: 5rem;
+            transform: translateY(2rem);
+            background-color: white;
+            border-radius: 10px;
+            transition: all .2s;
+        }
+
+        &::before {
+            transform: translateY(-2rem);
+        }
+
+    }
+}

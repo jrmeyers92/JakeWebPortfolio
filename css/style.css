@@ -2,7 +2,8 @@
 *, html {
   margin: 0;
   padding: 0;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 body {
   font-family: Arial, Helvetica, sans-serif; }
@@ -77,13 +78,60 @@ body {
 .projects__header {
   font-size: 3rem;
   text-align: center;
-  margin: 2rem 0; }
+  margin: 5rem 0; }
 
 .projects__div {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  margin: 0 22rem 6rem 22rem;
+  flex-wrap: wrap; }
 
 .projects__container {
   background-color: #20a4f3;
   height: 200px;
-  width: 200px; }
+  width: 200px;
+  min-width: 200px;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: .5rem;
+  margin: 4rem 4rem; }
+
+.toggler {
+  height: 5rem;
+  width: 5rem;
+  margin: 2rem;
+  position: relative;
+  display: none; }
+  .toggler__checkbox {
+    cursor: pointer;
+    height: 5rem;
+    width: 5rem;
+    opacity: 0;
+    z-index: 400000;
+    position: relative; }
+  .toggler__checkbox:checked + div {
+    background-color: #20a4f3; }
+  .toggler__checkbox:checked + div::before {
+    transform: rotate(45deg); }
+  .toggler__checkbox:checked + div::after {
+    transform: rotate(-45deg); }
+  .toggler__line {
+    height: 1rem;
+    width: 5rem;
+    border-radius: 10px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    transition: all .2s; }
+    .toggler__line::before, .toggler__line::after {
+      content: " ";
+      position: absolute;
+      height: 1rem;
+      width: 5rem;
+      transform: translateY(2rem);
+      background-color: white;
+      border-radius: 10px;
+      transition: all .2s; }
+    .toggler__line::before {
+      transform: translateY(-2rem); }
