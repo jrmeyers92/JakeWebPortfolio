@@ -11,7 +11,13 @@ function changeTextBack() {
 
 // hire me event listener
 
-// document.querySelector('.nav__hire').addEventListener('click', () => {
-//     const modal = document.querySelector('.modal');
-//     modal.classList.add("scale")
-// })
+document.querySelector('.nav__hire').addEventListener('click', () => {
+    const modal = document.querySelector('.modal');
+    modal.style.display = 'inline-block'
+})
+
+const modalX = document.querySelector('.fa-times');
+
+modalX.addEventListener('click', () => {
+    document.querySelector('.modal').style.display = "none";
+})

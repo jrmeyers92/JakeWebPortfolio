@@ -140,15 +140,49 @@ body {
       transform: translateY(-2rem); }
 
 .modal {
-  width: 80vw;
+  width: 25vw;
   height: 60vh;
   left: 50%;
   top: 50%;
+  display: none;
   transform: translate(-50%, -50%);
-  background-color: orange;
+  background-color: #f0f0f0;
   position: fixed;
-  border-radius: 2rem;
-  transition: all .4s; }
-
-.scale {
-  transform: scale(1); }
+  border-radius: .2rem;
+  transition: all .4s;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.3); }
+  .modal__headings {
+    margin: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .modal h2 {
+    font-size: 2.5rem;
+    text-align: center; }
+  .modal i {
+    font-size: 2.4rem;
+    position: absolute;
+    left: 1rem;
+    cursor: pointer; }
+  .modal__inputs {
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    margin: 3rem; }
+  .modal label {
+    margin-bottom: .4rem; }
+  .modal label:focus {
+    background-color: #20a4f3; }
+  .modal input {
+    margin-bottom: 1rem; }
+  .modal#message {
+    height: 200px; }
+  .modal__send {
+    background-color: #20a4f3;
+    color: white;
+    width: 50%;
+    margin: auto;
+    margin-top: 2rem;
+    height: 4rem; }
+  .modal__send:hover, .modal__send:active {
+    background-color: #2080b8; }
