@@ -8,8 +8,10 @@ function changeTextBack() {
     document.querySelector('.github').innerHTML = "GitHub";
 }
 
-// event listener for on page load 
 
-// document.addEventListener('load', () => {
-//     document.querySelector(',landing-page__heading-primary').classList.add('animate-backinLeft');
+// hire me event listener
+
+// document.querySelector('.nav__hire').addEventListener('click', () => {
+//     const modal = document.querySelector('.modal');
+//     modal.classList.add("scale")
 // })
