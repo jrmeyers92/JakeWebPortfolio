@@ -4,8 +4,6 @@
     margin: 2rem;
     position: relative;
 
-
-
     &__checkbox {
         cursor: pointer;
         height: 5rem;
@@ -49,12 +47,53 @@
             background-color: white;
             border-radius: 10px;
             transition: all .2s;
-            
         }
 
         &::before {
             transform: translateY(-2rem);
         }
-
     }
 }
+
+
+// .toggler {
+//     width: 5rem;
+//     height: 5rem;
+//     background-color: beige;
+//     margin: 2rem;
+//     position: relative;
+
+//     &__checkbox {
+//         width: 5rem;
+//         height: 5rem;
+//         position: absolute;
+//         z-index: 30;
+//         opacity: 0;
+//         cursor: pointer;
+//     }
+
+//     &__lines {
+//         width: 5rem;
+//         height: 5rem;
+//         position: absolute;
+//         background-color: orange;
+//     }
+
+//     &__line {
+//         position: absolute;
+//         width: 5rem;
+//         height: 1rem;
+//         background-color: white;
+//         transform: translateY(2rem);
+
+//         &::before,
+//         &::after {
+//             content: " ";
+//             position: absolute;
+//             background-color: white;
+//             width: 5rem;
+//             height: 1rem;
+//             transform: translateY(-2rem);
+//         }
+//     }
+// }
