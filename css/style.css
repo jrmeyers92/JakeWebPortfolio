@@ -34,12 +34,16 @@ body {
       font-size: 1.7rem; }
   .nav__links {
     display: flex; }
+    @media (max-width: 668px) {
+      .nav__links {
+        display: none; } }
     .nav__links li {
       list-style-type: none;
       margin: 2rem;
       font-size: 4rem;
       transition: all .1s;
-      padding: 1rem; }
+      padding: 1rem;
+      transition: all .2s; }
       .nav__links li:hover, .nav__links li:active {
         border-bottom: white solid 3px; }
     .nav__links a {
@@ -57,7 +61,12 @@ body {
   justify-content: center;
   position: relative; }
   .landing-page__headings {
-    margin-top: -20rem; }
+    margin-top: -20rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   .landing-page h1 {
     font-size: 5rem; }
     @media (max-width: 992px) {
@@ -108,8 +117,7 @@ body {
   height: 5rem;
   width: 5rem;
   margin: 2rem;
-  position: relative;
-  display: none; }
+  position: relative; }
   .toggler__checkbox {
     cursor: pointer;
     height: 5rem;
@@ -157,6 +165,12 @@ body {
   border-radius: .2rem;
   transition: all .4s;
   box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.3); }
+  @media (max-width: 992px) {
+    .modal {
+      width: 40vw; } }
+  @media (max-width: 668px) {
+    .modal {
+      width: 80vw; } }
   .modal__headings {
     margin: 2rem 1rem;
     display: flex;

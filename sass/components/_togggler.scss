@@ -3,7 +3,8 @@
     width: 5rem;
     margin: 2rem;
     position: relative;
-    display: none;
+
+
 
     &__checkbox {
         cursor: pointer;
@@ -37,7 +38,6 @@
         transform: translateY(-50%);
         position: absolute;
         transition: all .2s;
-        
 
         &::before,
         &::after {
@@ -49,6 +49,7 @@
             background-color: white;
             border-radius: 10px;
             transition: all .2s;
+            
         }
 
         &::before {

@@ -39,12 +39,17 @@
     &__links {
         display: flex;
 
+        @include phone {
+            display: none;
+        }
+
         & li {
             list-style-type: none;
             margin: 2rem;
             font-size: 4rem;
             transition: all .1s;
             padding: 1rem;
+            transition: all .2s;
 
             &:hover,
             &:active {

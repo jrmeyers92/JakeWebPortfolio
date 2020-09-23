@@ -10,6 +10,11 @@
 
     &__headings {
         margin-top: -20rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     & h1 {

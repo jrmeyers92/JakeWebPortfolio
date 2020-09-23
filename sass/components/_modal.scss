@@ -4,6 +4,14 @@
     left: 50%;
     top: 50%;
     display: none;
+
+    @include tablet {
+        width: 40vw;
+    }
+
+    @include phone {
+        width: 80vw;
+    }
     
     transform: translate(-50%, -50%);
     // transform: scale(0);
