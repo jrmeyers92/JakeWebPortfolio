@@ -3,7 +3,8 @@
   margin: 0;
   padding: 0;
   font-size: 62.5%;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  overflow-x: hidden; }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -59,6 +60,9 @@ body {
     margin-top: -20rem; }
   .landing-page h1 {
     font-size: 5rem; }
+    @media (max-width: 992px) {
+      .landing-page h1 {
+        font-size: 3rem; } }
   .landing-page h2 {
     font-size: 3rem; }
   .landing-page .view {
@@ -84,19 +88,21 @@ body {
 .projects__div {
   display: flex;
   justify-content: space-around;
-  margin: 0 22rem 6rem 22rem;
   flex-wrap: wrap;
   color: white;
   font-size: 3rem; }
 
 .projects__container {
   background-color: #20a4f3;
-  height: 200px;
-  width: 200px;
-  min-width: 200px;
+  height: 350px;
+  min-width: 350px;
   box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: .5rem;
   margin: 4rem 4rem; }
+  @media (max-width: 992px) {
+    .projects__container {
+      height: 250px;
+      min-width: 250px; } }
 
 .toggler {
   height: 5rem;
