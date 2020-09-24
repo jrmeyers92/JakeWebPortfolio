@@ -17,7 +17,7 @@ body {
   align-items: center;
   color: white;
   height: 10vh;
-  z-index: -3; }
+  position: relative; }
   .nav__logo {
     font-family: 'Monoton', cursive;
     transform: scale(2);
@@ -114,27 +114,34 @@ body {
       height: 250px;
       min-width: 250px; } }
 
-.menuToggle {
-  display: block;
-  position: relative;
-  top: 50px;
-  left: 50px;
-  z-index: 1;
-  -webkit-user-select: none;
-  user-select: none; }
-  .menuToggle input {
-    display: block;
-    width: 40px;
-    height: 32px;
+.hamburger {
+  height: 5rem;
+  width: 5rem;
+  background-color: green;
+  margin: 2rem;
+  position: relative; }
+  .hamburger__checkbox {
+    height: 5rem;
+    width: 5rem;
+    cursor: pointer; }
+  .hamburger__line {
+    height: 1rem;
+    width: 5rem;
+    background-color: orange;
+    z-index: 3;
+    display: inline-block;
     position: absolute;
-    top: -7px;
-    left: -5px;
-    cursor: pointer;
-    opacity: 0;
-    /* hide this */
-    z-index: 2;
-    /* and place it over the hamburger */
-    -webkit-touch-callout: none; }
+    right: 1.5rem;
+    top: 3.5rem; }
+    .hamburger__line::before, .hamburger__line::after {
+      content: " ";
+      position: absolute;
+      height: 1rem;
+      width: 5rem;
+      background-color: orange;
+      transform: translateY(2rem);
+      z-index: 3;
+      display: inline-block; }
 
 .modal {
   width: 25vw;
